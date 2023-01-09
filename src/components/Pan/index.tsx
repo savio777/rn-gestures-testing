@@ -17,7 +17,7 @@ const Pan = () => {
   const size = useSharedValue(100);
   const doubleTapActive = useSharedValue(0);
 
-  const pinchGesture = Gesture.Pan()
+  const panGesture = Gesture.Pan()
     .onUpdate((e) => {
       positionX.value = e.translationX;
       positionY.value = e.translationY;
@@ -47,7 +47,7 @@ const Pan = () => {
 
   return (
     <Container>
-      <GestureDetector gesture={pinchGesture}>
+      <GestureDetector gesture={panGesture}>
         <Button>
           <Box style={animatedStyle} />
         </Button>
