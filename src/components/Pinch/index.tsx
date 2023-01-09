@@ -3,7 +3,6 @@ import { GestureDetector, Gesture } from "react-native-gesture-handler";
 import {
   useAnimatedStyle,
   useSharedValue,
-  withTiming,
 } from "react-native-reanimated";
 
 import { Box, Button, Container } from "./styles";
